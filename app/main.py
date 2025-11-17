@@ -11,7 +11,7 @@ class Todo(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "FastAPI + Jenkins + Docker! This is testing"}
+    return {"message": "FastAPI + Jenkins + Docker!"}
 
 @app.get("/todos")
 def get_todos():
@@ -20,4 +20,4 @@ def get_todos():
 @app.post("/todos")
 def add_todo(todo: Todo):
     todos.append(todo)
-    return {"msg": "Todo added", "todo": todo}
+    return {"msg": "Todo added Successfully", "todo": todo}
