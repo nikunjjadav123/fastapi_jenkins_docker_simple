@@ -8,7 +8,8 @@ pipeline{
     stages{
         stage('Pull Code') {
             steps {
-                git 'https://github.com/nikunjjadav123/fastapi_jenkins_docker_simple.git'
+                git branch: 'main',
+                    url: 'https://github.com/nikunjjadav123/fastapi_jenkins_docker_simple.git'
             }
         }
         stage('Build Docker Image') {
