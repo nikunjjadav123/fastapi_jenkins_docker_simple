@@ -11,7 +11,7 @@ class Todo(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "FastAPI + Jenkins + Docker! + For Jenkins Only For Testing Purposes......"}
+    return {"message": "FastAPI + Jenkins + Docker! + For Jenkins Only For Testing Purposes Only......"}
 
 @app.get("/todos")
 def get_todos():
